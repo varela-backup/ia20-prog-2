@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+main {
+    border: 5px solid black;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > div {
+    border: 5px solid black;
+    width: 50%;
+    flex: none;
+    transition: .3s;
+}
+
+main > div:nth-child(1) {
+    background-color: blue;
+}
+
+main > div:nth-child(2) {
+    background-color: red;
+}
+
+main > div:nth-child(3) {
+    background-color: green;
+}
+
+main > div:nth-child(4) {
+    background-color: yellow;
+}
+
+main > div.animating {
+    background-color: white;
+}
