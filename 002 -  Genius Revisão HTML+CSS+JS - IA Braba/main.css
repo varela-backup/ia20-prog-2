@@ -8,6 +8,12 @@ html, body {
     border: 0 none;
 }
 
+@keyframes piscadela {
+    50% {
+        background-color: white;
+    }
+}
+
 main {
     border: 5px solid black;
     height: 100vh;
@@ -19,7 +25,7 @@ main > div {
     border: 10px solid black;
     width: 50%;
     flex: none;
-    transition: .3s;
+    /* transition: .3s; */
 }
 
 main > div:nth-child(1) {
@@ -39,5 +45,9 @@ main > div:nth-child(4) {
 }
 
 main > div.animate {
-    background-color: white;
+    /* background-color: white; */ /* usado no exemplo transition */
+    animation: piscadela 1s ease-in-out;
+    /* animation-name: piscadela;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
 }
