@@ -1,15 +1,16 @@
 const divMain = document.querySelector("main")
-// const divs = document.querySelectorAll("main div")
 const divs = divMain.querySelectorAll("div")
 const sequencia = []
 
-divMain.addEventListener("click", ev => {
-    ev.target.classList.toggle("animate")
-})
+let animatingColors = false
 
-// for (let i = 0; i <= 3; i++) {
-//     divs[i].addEventListener("animationend", ev => divs[i].classList.remove("animate"))
-// }
+divMain.addEventListener("click", ev => {
+    if (animatingColors) {
+        console.log("espere a animação terminar")
+        return
+    }
+    ev.target.classList.add("animate")
+})
 
 divs.forEach(div => {
     div.addEventListener("animationend", () => {
@@ -17,12 +18,16 @@ divs.forEach(div => {
     })
 })
 
-function turno() {
-    sequencia.forEach(num => {
-        divs[num].classList.add("animate")
-        // PARAMOS AQUI    
+function playAnimationColors() {
+    sequencia.forEach((current, index) => {
+        setTimeout(() => {
+            divs[current].classList.add("animate");
+        }, 1000 * index);
     })
+}
+
+function turno() {
     const rnd = Math.round(Math.random() * 3)
-    divs[rnd].classList.add("animate")
     sequencia.push(rnd)
+    playAnimationColors()
 }

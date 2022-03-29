@@ -46,7 +46,7 @@ main > div:nth-child(4) {
 
 main > div.animate {
     /* background-color: white; */ /* usado no exemplo transition */
-    animation: piscadela 1s ease-in-out;
+    animation: piscadela .3s ease-in-out;
     /* animation-name: piscadela;
     animation-duration: 1s;
     animation-timing-function: ease-in-out; */
