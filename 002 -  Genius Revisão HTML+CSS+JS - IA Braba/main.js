@@ -11,9 +11,8 @@ divMain.addEventListener("click", ev => {
         return
     }
     const idxClickedElement = divs.indexOf(ev.target)
-    if (idxClickedElement !== sequencia[currentColorPosition]) {
+    if (idxClickedElement !== sequencia(currentColorPosition)) {
         alert("perdeu playboy!")
-        return
     }
     currentColorPosition++
     ev.target.classList.add("animate")
@@ -35,7 +34,6 @@ function playAnimationColors() {
 }
 
 function turno() {
-    currentColorPosition = 0
     const rnd = Math.round(Math.random() * 3)
     sequencia.push(rnd)
     playAnimationColors()
