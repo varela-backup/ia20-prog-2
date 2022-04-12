@@ -51,3 +51,12 @@ main > div.animate {
     animation-duration: 1s;
     animation-timing-function: ease-in-out; */
 }
+
+div.pontuacao {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 5vmin;
+    background-color: #00000099;
+    color: #FFFFFF;
+}

@@ -36,7 +36,7 @@ main > div:nth-child(3) {
 
 main > div:nth-child(4) {
     background-color: yellow;
-}
+    }
 
 main > div.animating {
     background-color: white;
