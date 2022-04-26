@@ -1,8 +1,16 @@
+:root {
+    --color-a: #2ecc71;
+    --color-b: #9b59b6;
+    --color-c: #e74c3c;
+    --color-d: #e67e22;
+}
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
     border: 0 none;
@@ -16,36 +24,36 @@ html, body {
 
 main {
     border: 5px solid black;
-    height: 100vh;
+    height: 70vmin;
+    width: 70vmin;
     display: flex;
     flex-wrap: wrap;
 }
 
-main > div {
-    border: 10px solid black;
+main>div {
     width: 50%;
     flex: none;
-    /* transition: .3s; */
 }
 
-main > div:nth-child(1) {
-    background-color: blue;
+main>div:nth-child(1) {
+    background-color: var(--color-a);
 }
 
-main > div:nth-child(2) {
-    background-color: red;
+main>div:nth-child(2) {
+    background-color: var(--color-b);
 }
 
-main > div:nth-child(3) {
-    background-color: green;
+main>div:nth-child(3) {
+    background-color: var(--color-c);
 }
 
-main > div:nth-child(4) {
-    background-color: yellow;
+main>div:nth-child(4) {
+    background-color: var(--color-d);
 }
 
-main > div.animate {
-    /* background-color: white; */ /* usado no exemplo transition */
+main>div.animate {
+    /* background-color: white; */
+    /* usado no exemplo transition */
     animation: piscadela .3s ease-in-out;
     /* animation-name: piscadela;
     animation-duration: 1s;
