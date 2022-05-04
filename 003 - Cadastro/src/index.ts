@@ -1,7 +1,7 @@
 //@ts-ignore
 import * as readline from 'node:readline/promises'
 import { stdin as input, stdout as output } from 'node:process'
-import { Aluno } from './Entidades/Aluno' // adicionar
+import { Aluno } from './Entidades/Aluno'
 
 const rl = readline.createInterface({ input, output })
 
