@@ -19,3 +19,10 @@ maskElements.forEach(el => {
     fnMascara(el)
 })
 
+const x = document.querySelector(".modal")
+const main = document.querySelector("main")
+let i = 100;
+while(i--) {
+    const z = x.cloneNode(true)
+    main.appendChild(z)
+}
