@@ -38,6 +38,20 @@ main {
     border-radius: 5px;
     padding: 1em;
     margin: 2em;
+    position: relative;
+}
+
+.modal .bt-close {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    right: -.5em;
+    top: -.5em;   
+    border-radius: 50%;
+    border: 1px solid black;
+    color: red;
+    background-color: white;
+    cursor: pointer;
 }
 
 .modal h1 {

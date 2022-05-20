@@ -32,31 +32,36 @@
                 <label for="idzzz">ZZZZZZZZZZZZZZZZZZ</label>   
             </div>
         -->
-        <div class="search">
+        <div class="action-bar">
             <input>
+            <button>procurar</button>
+            <button class="bt-add">adicionar</button>
         </div>
 
         <div class="container-data">
-            <div class="modal">
-                <h1>Cadastrar Pessoa</h1>
-                <form>
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input name="nome" id="nome" type="text" placeholder="nome completo">
+            <template class="aluno">
+                <div class="modal">
+                    <button class="bt-close">X</button>
+                    <h1>Cadastrar Pessoa</h1>
+                    <form>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input name="nome" id="nome" type="text" placeholder="nome completo">
+                        </div>
+                        <div>
+                            <label for="dataNasc">Data de Nascimento</label>
+                            <input name="dataNasc" id="dataNasc" type="date">
+                        </div>
+                        <div>
+                            <label for="matricula">Matrícula</label>
+                            <input data-mascara="matricula" name="matricula" id="matricula" type="text">
+                        </div>
+                    </form>
+                    <div class="action">
+                        <button>salvar</button>
                     </div>
-                    <div>
-                        <label for="dataNasc">Data de Nascimento</label>
-                        <input name="dataNasc" id="dataNasc" type="date">
-                    </div>
-                    <div>
-                        <label for="matricula">Matrícula</label>
-                        <input data-mascara="matricula" name="matricula" id="matricula" type="text">
-                    </div>
-                </form>
-                <div class="action">
-                    <button>salvar</button>
                 </div>
-            </div>
+            </template>
         </div>
     </main>
 
