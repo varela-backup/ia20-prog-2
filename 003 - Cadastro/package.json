@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "ts-node-script src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +16,7 @@
     "sqlite3": "^5.0.4"
   },
   "devDependencies": {
-    "@types/node": "*",
+    "@types/node": "^17.0.36",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   }
